@@ -6,7 +6,7 @@
 
 | Component | Resource |
 |---|---|
-| Starter corpus | `wikipedia/wikipedia` (config: `20220301.simple`) |
+| Starter corpus | `wikimedia/wikipedia` (config: `20231101.simple`) |
 | Embedding model | `sentence-transformers/all-MiniLM-L6-v2` |
 | Vector database | ChromaDB (persistent, cosine similarity) |
 | Generator | UTSA Llama 3.1 8B Instruct (`meta-llama/Llama-3.1-8B-Instruct`) |
