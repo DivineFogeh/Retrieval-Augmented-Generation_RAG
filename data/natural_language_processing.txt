@@ -1,0 +1,14 @@
+Title: Natural Language Processing
+URL: https://en.wikipedia.org/wiki/Natural_language_processing
+
+Natural language processing (NLP) is a subfield of linguistics, computer science, and artificial intelligence concerned with the interactions between computers and human language, in particular how to program computers to process and analyze large amounts of natural language data. NLP tasks include text classification, named entity recognition, sentiment analysis, machine translation, question answering, and text summarization.
+
+Tokenization is one of the first steps in most NLP pipelines. It involves splitting a text into smaller units called tokens, which can be words, subwords, or characters. Subword tokenization methods like Byte-Pair Encoding (BPE) and WordPiece are particularly popular in modern NLP, as they handle rare and unknown words by breaking them into smaller known subword units.
+
+Word embeddings are dense vector representations of words that capture semantic relationships. Word2Vec, introduced by Google in 2013, learns embeddings by training a neural network to predict a word from its context (CBOW model) or predict context words from a target word (Skip-gram model). Words that appear in similar contexts end up with similar vector representations, so semantically similar words are close together in the embedding space. GloVe and FastText are other popular embedding methods.
+
+BERT (Bidirectional Encoder Representations from Transformers) is a transformer-based language model pre-trained by Google on a large corpus using masked language modeling (predicting randomly masked tokens) and next sentence prediction. BERT is bidirectional, meaning it reads text from both left and right simultaneously, giving it a richer understanding of context. Fine-tuning BERT on task-specific labeled data achieves state-of-the-art results on many NLP benchmarks.
+
+Large language models (LLMs) such as GPT-3, GPT-4, LLaMA, and Claude are autoregressive transformer models trained on vast text corpora to predict the next token in a sequence. Through this simple training objective applied at scale, LLMs learn extensive world knowledge and can perform complex reasoning, code generation, and multi-turn dialogue without task-specific fine-tuning. Instruction tuning and reinforcement learning from human feedback (RLHF) further improve their ability to follow instructions and produce helpful, accurate responses.
+
+Retrieval-Augmented Generation (RAG) is a technique that combines a retrieval system with a generative language model. Instead of relying solely on the model's parametric memory, RAG first retrieves relevant documents from an external knowledge base and then conditions the generator on these documents to produce a grounded answer. This approach reduces hallucination and allows the model to answer questions about information not present in its training data.

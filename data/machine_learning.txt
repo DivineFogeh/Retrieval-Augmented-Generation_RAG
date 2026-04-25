@@ -1,0 +1,14 @@
+Title: Machine Learning
+URL: https://en.wikipedia.org/wiki/Machine_learning
+
+Machine learning (ML) is a branch of artificial intelligence (AI) and computer science that focuses on the use of data and algorithms to enable computers to imitate the way humans learn, gradually improving accuracy. Machine learning is an important component of the growing field of data science.
+
+Supervised learning is the most common form of machine learning. In supervised learning, algorithms are trained on labeled datasets that include inputs paired with correct outputs. The algorithm learns to map inputs to outputs, and after training, can predict outputs for new, unseen inputs. Common supervised learning algorithms include linear regression, logistic regression, decision trees, support vector machines, and neural networks.
+
+Unsupervised learning involves training algorithms on datasets without labeled responses. The algorithm must discover hidden patterns or structures in the data. Clustering is a common unsupervised technique, where data points are grouped based on similarity. K-means clustering and hierarchical clustering are popular methods. Dimensionality reduction is another unsupervised technique, used to reduce the number of features in a dataset while preserving important information.
+
+Reinforcement learning is a type of machine learning where an agent learns to make decisions by taking actions in an environment to maximize a cumulative reward. The agent receives feedback in the form of rewards or penalties and uses this feedback to improve its policy. Applications of reinforcement learning include game playing, robotics, and autonomous driving.
+
+Deep learning is a subset of machine learning that uses neural networks with many layers (hence "deep") to learn representations of data with multiple levels of abstraction. Deep learning has achieved state-of-the-art results in many tasks, including image recognition, speech recognition, and natural language processing. Convolutional neural networks (CNNs) are widely used for image-related tasks, while recurrent neural networks (RNNs) and transformers are used for sequential data like text.
+
+Overfitting is a common problem in machine learning where a model learns the training data too well, including its noise and outliers, and performs poorly on unseen data. Techniques to prevent overfitting include regularization (adding a penalty for complexity to the loss function), dropout (randomly ignoring neurons during training), and early stopping (halting training when validation performance stops improving).

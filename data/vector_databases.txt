@@ -1,0 +1,14 @@
+Title: Vector Database
+URL: https://en.wikipedia.org/wiki/Vector_database
+
+A vector database is a type of database that stores data as high-dimensional vectors (numerical representations) and enables efficient similarity search over these vectors. Vector databases are a core component of modern AI applications, including semantic search, recommendation systems, and retrieval-augmented generation (RAG).
+
+Unlike traditional relational databases that search for exact matches, vector databases search for approximate nearest neighbors (ANN) — vectors that are mathematically similar to a query vector. Similarity is typically measured using metrics like cosine similarity, dot product, or Euclidean distance. Cosine similarity measures the angle between two vectors and is particularly useful for comparing text embeddings, where direction matters more than magnitude.
+
+To enable fast similarity search at scale, vector databases use specialized indexing structures. The Hierarchical Navigable Small World (HNSW) algorithm is one of the most popular ANN indexing approaches. HNSW builds a multi-layer graph where each layer is a sparser version of the layer below, allowing the search to start at the top (coarse) layer and progressively refine using lower (denser) layers. This achieves a good balance between search speed and recall accuracy.
+
+Chroma is an open-source embedding database designed for use with LLMs. It provides a simple Python API for creating collections, adding documents with their embeddings and metadata, and querying by similarity. Chroma supports both in-memory and persistent storage modes. In persistent mode, data is saved to disk and can be reloaded across sessions, making it suitable for production RAG pipelines.
+
+Other popular vector databases include Pinecone (a managed cloud service), Weaviate (open-source with a rich GraphQL API), Qdrant (open-source, written in Rust for high performance), Milvus (open-source, designed for billion-scale vectors), and FAISS (Facebook AI Similarity Search, a library rather than a full database, optimized for GPU-accelerated similarity search).
+
+Metadata filtering is an important capability in vector databases. In addition to retrieving the most similar vectors, users often want to filter results based on metadata attributes (e.g., retrieve only documents from a specific author or date range). This hybrid search — combining vector similarity with traditional attribute filtering — is now supported by most production-grade vector databases.

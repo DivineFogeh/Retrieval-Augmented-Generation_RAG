@@ -1,0 +1,9 @@
+# RAG Assignment 4 – Track A
+# Install with:  pip install -r requirements.txt
+
+chromadb>=0.5.0
+datasets>=2.18.0
+sentence-transformers>=3.0.0
+openai>=1.30.0          # used for UTSA Llama endpoint (OpenAI-compatible)
+huggingface-hub>=0.23.0
+tqdm>=4.66.0

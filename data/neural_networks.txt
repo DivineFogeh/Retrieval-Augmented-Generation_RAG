@@ -1,0 +1,14 @@
+Title: Neural Network
+URL: https://en.wikipedia.org/wiki/Neural_network_(machine_learning)
+
+An artificial neural network (ANN) is a computational model inspired by the structure and function of biological neural networks in the brain. Neural networks consist of layers of interconnected nodes (neurons) that process information using connectionist approaches to computation.
+
+A basic neural network has three types of layers: an input layer, one or more hidden layers, and an output layer. Each neuron in a layer is connected to neurons in the next layer via weighted connections. During forward propagation, input data flows through the network, with each neuron computing a weighted sum of its inputs and applying an activation function to produce an output.
+
+Activation functions introduce non-linearity into the network, enabling it to learn complex patterns. Common activation functions include the sigmoid function (which maps inputs to values between 0 and 1), the hyperbolic tangent (tanh, which maps inputs to values between -1 and 1), and the rectified linear unit (ReLU, which outputs the input directly if it is positive and zero otherwise). ReLU has become the most widely used activation function in deep networks due to its simplicity and effectiveness.
+
+Training a neural network involves adjusting the weights of connections to minimize a loss function that measures the difference between the network's predictions and the true labels. This is done using an optimization algorithm called gradient descent, combined with the backpropagation algorithm. Backpropagation calculates the gradient of the loss with respect to each weight by applying the chain rule of calculus, allowing weights to be updated efficiently.
+
+The transformer architecture, introduced in the 2017 paper "Attention Is All You Need," revolutionized natural language processing. Transformers use self-attention mechanisms to weigh the importance of different parts of the input when producing an output. Large language models like BERT, GPT, and T5 are all based on the transformer architecture and have achieved remarkable performance on a wide range of language tasks.
+
+Convolutional neural networks (CNNs) are specialized neural networks designed for processing grid-structured data like images. They use convolutional layers that apply learned filters across the input, enabling the network to detect local features regardless of their position in the image. Pooling layers then reduce the spatial dimensions of the feature maps, making the representation more compact and invariant to small translations.
